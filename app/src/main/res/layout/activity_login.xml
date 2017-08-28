@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context="com.example.reaz.hospitalaid.LoginActivity">
+
+    <!-- Login progress -->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#3b3a3a"
+        android:src="@drawable/heartlogo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#3b3a3a"
+        android:src="@drawable/doctor" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find the best Hospitals"
+        android:background="#3b3a3a"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#ffffff"/>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3b3a3a">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/logintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:fontFamily="serif-monospace"
+                android:text="Log in or Sign up"
+                android:textSize="16dp"
+                android:textColor="#ff8d41"
+                android:paddingBottom="19dp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="#444344"
+                android:drawableLeft="@drawable/message4"
+                android:paddingLeft="5dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#444344"
+                android:drawableLeft="@drawable/lock4"
+                android:paddingLeft="5dp"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/bottm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3b3a3a"
+
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+
+                android:text="keep me Logged in"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+
+          <Button
+              android:layout_width="300dp"
+              android:layout_height="45dp"
+              android:text="Log In"
+              android:textStyle="bold"
+              android:layout_gravity="center"
+              android:background="#444344"
+              android:drawableLeft="@drawable/key4"
+              android:paddingLeft="5dp"
+              />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot username or passsword"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:textColor="#ff8d41"
+                android:fontFamily="serif-monospace"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
